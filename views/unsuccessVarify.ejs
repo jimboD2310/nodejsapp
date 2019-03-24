@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Varify</title>
+</head>
+<body>
+	<% include partials/nav.ejs %>
+    <form id="Login" method="POST" action="/signup">
+    	<p>Please enter the varification code just sent to your email address below. </p>
+    	<div class="form-group">
+    		<input class="form-control" name="varification" placeholder="Varification Code">
+    	</div>
+    	<button type="submit" class="btn btn-primary">Varify</button>
+    </form>
+    <script>
+        alert("You have entered the wrong code. Please enter the correct code or retry the signup process.");
+    </script>
+</body>
+</html>

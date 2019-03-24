@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Admin Sign Up</title>
+    </head>
+    <body id="LoginForm">
+        <div>
+            <% include partials/nav.ejs %>
+        </div>
+            <div class="login-form">
+                <div class="main-div">
+                    <div class="panel">
+                        <h2>Admin Sign Up</h2>
+                        <p>Please enter your details below</p>
+                    </div>
+                    <form id="Login" method="POST" action="/signup">
+
+                        <div class="form-group">
+
+                            <input class="form-control" name="name" placeholder="Name">
+
+                        </div>
+                        <div class="form-group">
+
+                            <input class="form-control" name="university" placeholder="University">
+
+                        </div>
+                        <!-- <div class="form-group">
+
+                            <input type="number" class="form-control" name="publications" placeholder="Publications">
+
+                        </div> -->
+                        <div class="form-group">
+
+                            <input type="email" class="form-control" name="email" placeholder="Email Address">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <input type="password" class="form-control" name="password" placeholder="Password">
+
+                        </div>
+                        <div class="form-group">
+
+                            <input type="password" class="form-control" name="varifyPassword" placeholder="Retype Password">
+
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                        <br><br><a href="/signin">Alternatively Login</a>
+                    </form>
+                </div>
+            </div>
+        <script>
+            alert("You have not completed the form. Please re-enter your details. ");
+        </script>
+    </body>
+</html>
